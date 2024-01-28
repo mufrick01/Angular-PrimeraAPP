@@ -1,0 +1,13 @@
+<h3>PERSONAJES DRAGONBALL</h3>
+
+<div class="row mt-5 mx-1">
+  <div class="col mt-3">
+    <h3>listado</h3>
+    <dbz-show-list [list]="characterList"  (DeletCharacter)="OnDeleteCharacter($event)" />
+
+  </div>
+  <div class="col mt-3 ">
+    <h4>Agregar Personaje</h4>
+   <dbz-agregar-personaje (onNewCharacter)="onAddCharacter($event)" />
+  </div>
+</div>
